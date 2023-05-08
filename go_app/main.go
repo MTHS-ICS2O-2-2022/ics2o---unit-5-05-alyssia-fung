@@ -16,19 +16,20 @@ func main() {
 	fmt.Scanln(&c)
 
 	// Check the type of the triangle
-	triangleType := getTriangleType(a, b, c)
+	var triangleType string
+	getTriangleType(a, b, c, &triangleType)
 
 	// Print the result
 	fmt.Println("Triangle Type:", triangleType)
 }
 
-func getTriangleType(a, b, c float64) string {
+func getTriangleType(a, b, c float64, triangleType *string) {
 	if a == b && b == c {
-		return "Equilateral"
+		*triangleType = "Equilateral"
 	} else if a == b || b == c || a == c {
-		return "Isosceles"
+		*triangleType = "Isosceles"
 	} else {
-		return "Scalene"
+		*triangleType = "Scalene"
 	}
 	fmt.Println("\nDone.")
 }

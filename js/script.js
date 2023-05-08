@@ -37,7 +37,8 @@ function button() {
     document.getElementById("answer").innerHTML =
       "You have an equilateral triangle!"
   } else if (angleA != angleB && angleA != angleC && angleB != angleC) {
-    document.getElementById("answer").innerHTML = "You have an scalene triangle!"
+    document.getElementById("answer").innerHTML =
+      "You have an scalene triangle!"
   } else if (
     (angleA != angleB && angleA == angleC) ||
     (angleA == angleB && angleA != angleC)
