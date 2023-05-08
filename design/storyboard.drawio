@@ -1,11 +1,56 @@
 <mxfile host="65bd71144e">
     <diagram id="HIP3nbAZw_EuaXWnEj3U" name="Page-1">
-        <mxGraphModel dx="399" dy="236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="532" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="7" value="http://ics2o.mths.ca" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="40" width="760" height="480" as="geometry"/>
+                <mxCell id="7" value="http://ics2o.mths.ca" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="80" width="782" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Triangle type checker&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry y="20" width="780" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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;" vertex="1" parent="7">
+                    <mxGeometry x="450" y="183.07" width="292" height="141.46" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Check what triangle you got" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="20" y="90" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="you can get three different kind of triangle: Scalene, isosceles, and equilateral" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="10" y="129" width="560" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Length A:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="10" y="190" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Length B:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="12.5" y="235" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Length C:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="10" y="280" width="75" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Match&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="56" y="350" width="74" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="110" y="190" width="120" height="27.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="110" y="235" width="120" height="26.53" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="110" y="280" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="You have an Scalene triangle&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="20" y="420" width="227" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="cm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="247" y="187.5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="cm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="247" y="233.26999999999998" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="cm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="7">
+                    <mxGeometry x="247" y="280" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
