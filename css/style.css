@@ -17,23 +17,10 @@
 /* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
 */
 .mdl-ripple {
-  background: #b12424b6;
+  background: #3e05da;
   opacity: 0.001;
 }
 
-body {
-  background-color: rgba(237 100 173 80.2%);
-}
-
-p {
-  color: rgba(141 130 31 95.1%);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  padding-top: 5pt;
-}
-
 .right-image {
-  height: 250px;
-  width: auto;
-  float: right;
+  padding-left: 60%;
 }

@@ -1,10 +1,16 @@
-// Copyright (c) 2022 Alyssia fungAll rights reserved
+// Copyright (c) 2020 Bonnie Zhu All rights reserved
 //
-// Created by: Alyssia fung
+// Created by: Bonnie Zhu
 // Created on: May 2023
 // This file contains the JS functions for index.html
 
 "use strict"
+
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit5-05-HTML/sw.js", {
+    scope: "/ICS2O-Unit5-05-HTML/",
+  })
+}
 
 function button() {
   // input setting
@@ -34,18 +40,17 @@ function button() {
     (180 / Math.PI)
 
   if (angleA == angleB && angleA == angleC) {
-    document.getElementById("answer").innerHTML =
+    document.getElementById("math").innerHTML =
       "You have an equilateral triangle!"
   } else if (angleA != angleB && angleA != angleC && angleB != angleC) {
-    document.getElementById("answer").innerHTML =
-      "You have an scalene triangle!"
+    document.getElementById("math").innerHTML = "You have an scalene triangle!"
   } else if (
     (angleA != angleB && angleA == angleC) ||
     (angleA == angleB && angleA != angleC)
   ) {
-    document.getElementById("answer").innerHTML =
+    document.getElementById("math").innerHTML =
       "You have an isosceles triangle!"
   } else {
-    document.getElementById("answer").innerHTML = "This triangle doesn't exist."
+    document.getElementById("math").innerHTML = "This triangle doesn't exist."
   }
 }
