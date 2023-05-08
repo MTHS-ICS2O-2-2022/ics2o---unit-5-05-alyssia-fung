@@ -28,7 +28,7 @@ func getTriangleType(a, b, c float64, triangleType *string) {
 		*triangleType = "Equilateral"
 	} else if a == b || b == c || a == c {
 		*triangleType = "Isosceles"
-	} else a <> b <> c {
+	} else {
 		*triangleType = "Scalene"
 	}
 	fmt.Println("\nDone.")
