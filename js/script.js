@@ -1,44 +1,56 @@
+// Copyright (c) 2023 Alyssia Fung. All rights reserved.
+//
+// Created by: Alyssia Fung
+// Created on: May 2023
+// This file contains the JS functions for index.html
+
 "use strict"
 
-function calculate() {
-  // get input values from HTML form
-  const lengthA = parseFloat(document.getElementById("angle1").value)
-  const lengthB = parseFloat(document.getElementById("angle2").value)
-  const lengthC = parseFloat(document.getElementById("angle3").value)
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit5-05-HTML/sw.js", {
+    scope: "/ICS2O-Unit5-05-HTML/",
+  })
+}
 
-  // check if input is valid
-  if (isNaN(lengthA) || isNaN(lengthB) || isNaN(lengthC)) {
-    document.getElementById("triangleType").innerHTML =
-      "Please enter valid numbers"
-    return
-  }
+function button() {
+  // Input setting
+  const lengthAString = parseInt(document.getElementById("lengthA").value)
+  const lengthBString = parseInt(document.getElementById("lengthB").value)
+  const lengthCString = parseInt(document.getElementById("lengthC").value)
 
-  // using the cosine law
-  const angleA = Math.acos(
-    (lengthB ** 2 + lengthC ** 2 - lengthA ** 2) / (2 * lengthB * lengthC)
-  ).toFixed(2)
-  const angleB = Math.acos(
-    (lengthC ** 2 + lengthA ** 2 - lengthB ** 2) / (2 * lengthC * lengthA)
-  ).toFixed(2)
-  const angleC = Math.acos(
-    (lengthA ** 2 + lengthB ** 2 - lengthC ** 2) / (2 * lengthA * lengthB)
-  ).toFixed(2)
+  const lengthA = parseFloat(lengthAString)
+  const lengthB = parseFloat(lengthBString)
+  const lengthC = parseFloat(lengthCString)
 
-  // determine triangle type based on side lengths
-  let triangleType
-  if (lengthA === lengthB && lengthB === lengthC) {
-    triangleType = "equilateral"
+  // Process
+  const angleA =
+    Math.acos(
+      (lengthB ** 2 + lengthC ** 2 - lengthA ** 2) / (2 * lengthB * lengthC)
+    ) *
+    (180 / Math.PI)
+  const angleB =
+    Math.acos(
+      (lengthC ** 2 + lengthA ** 2 - lengthB ** 2) / (2 * lengthC * lengthA)
+    ) *
+    (180 / Math.PI)
+  const angleC =
+    Math.acos(
+      (lengthA ** 2 + lengthB ** 2 - lengthC ** 2) / (2 * lengthA * lengthB)
+    ) *
+    (180 / Math.PI)
+
+  if (angleA === angleB && angleA === angleC) {
+    document.getElementById("math").innerHTML =
+      "You have an equilateral triangle!"
+  } else if (angleA !== angleB && angleA !== angleC && angleB !== angleC) {
+    document.getElementById("math").innerHTML = "You have a scalene triangle!"
   } else if (
-    lengthA === lengthB ||
-    lengthA === lengthC ||
-    lengthB === lengthC
+    (angleA !== angleB && angleA === angleC) ||
+    (angleA === angleB && angleA !== angleC)
   ) {
-    triangleType = "isosceles"
+    document.getElementById("math").innerHTML =
+      "You have an isosceles triangle!"
   } else {
-    triangleType = "scalene"
+    document.getElementById("math").innerHTML = "This triangle doesn't exist."
   }
-
-  // display result in HTML page
-  document.getElementById("triangleType").innerHTML =
-    "This is a " + triangleType + " triangle"
 }
