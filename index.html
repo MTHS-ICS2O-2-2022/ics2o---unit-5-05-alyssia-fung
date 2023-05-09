@@ -30,67 +30,94 @@
             defer
             src="https://code.getmdl.io/1.3.0/material.min.js"
           ></script>
-          <script src="./js/script.js"></script>
-          <span class="mdl-layout-title">Area of a triangle with JS</span>
+          <title>Triangle Calculator</title>
+          <link
+            rel="stylesheet"
+            href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+          />
+          <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+          <body>
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+              <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                  <!-- Title -->
+                  <span class="mdl-layout-title"
+                    >Area of a triangle with JS</span
+                  >
+                </div>
+              </header>
+              <main class="mdl-layout__content">
+                <!-- Simple Textfield -->
+                <form action="#">
+                  <p>angle 1</p>
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input
+                      class="mdl-textfield__input"
+                      type="text"
+                      pattern="-?[0-9]*(\.[0-9]+)?"
+                      id="angle1"
+                    />
+                    <label class="mdl-textfield__label" for="angle1"
+                      >base ...</label
+                    >
+                    <span class="mdl-textfield__error"
+                      >Input is not a number!</span
+                    >
+                  </div>
+                </form>
+                <!-- Numeric Textfield -->
+                <form action="#">
+                  <p>angle 2</p>
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input
+                      class="mdl-textfield__input"
+                      type="text"
+                      pattern="-?[0-9]*(\.[0-9]+)?"
+                      id="angle2"
+                    />
+                    <label class="mdl-textfield__label" for="angle2"
+                      >height...</label
+                    >
+                    <span class="mdl-textfield__error"
+                      >Input is not a number!</span
+                    >
+                  </div>
+                </form>
+                <form action="#">
+                  <p>angle 3</p>
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input
+                      class="mdl-textfield__input"
+                      type="text"
+                      pattern="-?[0-9]*(\.[0-9]+)?"
+                      id="angle3"
+                    />
+                    <label class="mdl-textfield__label" for="height"
+                      >height...</label
+                    >
+                    <span class="mdl-textfield__error"
+                      >Input is not a number!</span
+                    >
+                  </div>
+                </form>
+                <br />
+                <!-- Raised button with ripple -->
+                <button
+                  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                  onclick="calculate()"
+                >
+                  Calculate
+                </button>
+                <div id="triangleType">
+                  <br />
+                  <img src="./images/scalene.png" alt="Scalene Triangle" />
+                  <script src="./js/script.js"></script>
+                </div>
+              </main>
+            </div>
+          </body>
         </div>
       </header>
-      <main class="mdl-layout__content">
-        <!-- Simple Textfield -->
-        <form action="#">
-          <p>angle 1</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="angle1"
-            />
-            <label class="mdl-textfield__label" for="angle1">base ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>angle 2</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="angle2"
-            />
-            <label class="mdl-textfield__label" for="angle2">height...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <form action="#">
-          <p>angle 3</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="angle3"
-            />
-            <label class="mdl-textfield__label" for="height">height...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br />
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
-        >
-          Calculate
-        </button>
-        <div id="triangleType">
-          <br />
-        </div>
-        <div id="fanta-bottle">
-          <img src="./images/scalene.png" />
-        </div>
-      </main>
     </div>
   </body>
 </html>
