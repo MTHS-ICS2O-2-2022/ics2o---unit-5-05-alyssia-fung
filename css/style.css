@@ -3,24 +3,37 @@
 * This file contains the CSS for index.html
 */
 
-.mdl-layout__header-row {
-  align-items: center;
-  justify-content: center;
-}
-
-.mdl-layout__content {
-  padding-left: 15pt;
-  padding-right: 15pt;
-  padding-top: 15pt;
-}
-
-/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
-*/
 .mdl-ripple {
-  background: #3e05da;
+  background: #8b0d94;
   opacity: 0.001;
 }
 
-.right-image {
-  padding-left: 60%;
+.mdl-layout__header-row {
+  justify-content: center;
+  padding: 0;
+  color: rgba(13, 18, 10, 0.765);
+}
+
+.mdl-layout__content {
+  padding-left: 20pt;
+  padding-right: 20pt;
+  padding-top: 20pt;
+}
+
+.mdl-textfield__error {
+  color: #353151;
+}
+
+.page-content {
+  color: rgb(6, 6, 6);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: rgb(241, 234, 241);
+}
+
+img {
+  float: right
 }
