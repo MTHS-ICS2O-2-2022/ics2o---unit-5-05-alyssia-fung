@@ -11,7 +11,7 @@
 .mdl-layout__header-row {
   justify-content: center;
   padding: 0;
-  color: rgba(13, 18, 10, 0.765);
+  color: rgba(13 18 10 76.5%);
 }
 
 .mdl-layout__content {
@@ -31,7 +31,7 @@
 }
 
 body {
-  background-color: rgb(241, 234, 241);
+  background-color: rgb(241 234 241);
 }
 
 img {
