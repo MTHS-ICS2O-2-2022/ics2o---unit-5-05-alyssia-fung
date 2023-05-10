@@ -15,11 +15,11 @@
 }
 
 .mdl-textfield__error {
-  color: rgb(179 120 145);
+  color: rgb(216 216 216);
 }
 
 .page-content {
-  color: white;
+  color: rgb(0 0 0);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
 }
